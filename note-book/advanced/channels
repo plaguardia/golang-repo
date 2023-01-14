@@ -1,0 +1,17 @@
+Channels are essentially queues of mutexes
+
+if we have a function that produces things and multiple functions that consume those same things (maybe simataliusly) it becomes a sync problem
+
+There are two types of channels
+
+Unbuffered and buffered
+
+Unbuffered = queue size is 0
+    - meaning the queue/channel can only hold one thing at a time 
+    - once the producer function produces its thing it sits there until consumed THEN it will create another thing that waits to be consumed
+    - real time one at a time
+
+Buffered =  limited queue size (maybe two or three)
+    - meaning there can be 2 or three things produced and waiting in a queue to be consumed
+    - if the buffer is set to 3 and 2 of them are consumed it will create 2 more to replace them in order to always have 3 in the queue
+    - think of video buffering, it front loads the information so there is no wait time to get it when it is needed
