@@ -10,6 +10,18 @@ Stronger that typical "multi threaded" languages
 Concurency vs Parallelism
 Watch this! : https://www.youtube.com/watch?v=oV9rvDllKEg&ab_channel=gnbitcom
 
+Concurency is about "dealing" with a lot of things at once
+Parallelism is about "doing" with a lot of things at once
+    - related but not the same things
+    - concurency is about structure and paralelism is about execution
 
+Concurency is the structure that allows for parallelism (but doesn't enforce it)
+
+
+
+
+
+
+Paper by tony hore "communicating sequential processes" (go read it)
 
 
